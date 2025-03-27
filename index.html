@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Interactive Website</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #FF1493;
+        }
+        canvas {
+            display: block;
+        }
+        .header-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            z-index: 100;
+        }
+        .profile-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+        .title {
+            color: white;
+            font-size: 36px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 0;
+        }
+        .button-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 20px;
+            z-index: 100;
+        }
+        .social-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .social-button:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <img src="https://cdn.discordapp.com/attachments/1280337851812417606/1354615537761521705/Picsart_24-05-19_22-52-52-076.jpg?ex=67e5ef87&is=67e49e07&hm=59a417f56330a614fa1ffe9ad85a7bbcd2a25faf1ac76bf985007ff7c277e2eb&" alt="Profile" class="profile-image">
+        <h1 class="title">Muhammad Sharif</h1>
+    </div>
+    <div class="button-container">
+        <button id="facebook-button" class="social-button">My Facebook</button>
+        <button id="tiktok-button" class="social-button">My TikTok</button>
+        <button id="instagram-button" class="social-button">My Insta</button>
+        <button id="whatsapp-button" class="social-button">My WhatsApp</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
